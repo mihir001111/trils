@@ -1,0 +1,25 @@
+{
+    "name": "After Trials",
+    "short_name": "After Trials",
+    "description": "Professional network for medicine",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#0d8fe9",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/logo.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "categories": [
+        "medical",
+        "health",
+        "social"
+    ],
+    "lang": "en",
+    "scope": "/"
+}

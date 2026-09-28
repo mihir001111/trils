@@ -1,0 +1,36 @@
+// Course to Specialties Mapping
+export const COURSE_SPECIALTIES: Record<string, string[]> = {
+    Medicine: [
+        'General Practice',
+        'Internal Medicine',
+        'Pediatrics',
+        'Cardiology',
+        'Dermatology',
+        'Psychiatry',
+        'Radiology',
+        'Anesthesiology',
+        'Emergency Medicine',
+        'Others',
+    ],
+    Surgery: [
+        'General Surgery',
+        'Orthopedics',
+        'Obstetrics & Gynecology',
+        'Plastic Surgery',
+        'Ophthalmology',
+        'ENT',
+        'Urology',
+        'Others',
+    ],
+    Dentistry: [
+        'General Dentistry',
+        'Orthodontics',
+        'Oral & Maxillofacial Surgery',
+        'Prosthodontics',
+        'Periodontics',
+        'Others',
+    ],
+    Nursing: ['General Nursing', 'Critical Care', 'Pediatric Nursing', 'Psychiatric Nursing', 'Others'],
+    Physiotherapy: ['General Physiotherapy', 'Orthopedic & Sports', 'Neurological', 'Cardio-Respiratory', 'Others'],
+    Others: [],
+};

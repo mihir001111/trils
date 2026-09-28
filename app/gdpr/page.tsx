@@ -1,0 +1,165 @@
+import { LegalLayout } from '@/components/layout/LegalLayout';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'GDPR & Data Sovereignty | After Trials',
+    description: 'GDPR compliance and data sovereignty information for After Trials.',
+};
+
+export default function GdprPage() {
+    return (
+        <LegalLayout
+            eyebrow="DATA PROTECTION // GDPR"
+            title="GDPR & Data Sovereignty"
+            subtitle="How After Trials complies with GDPR and protects your data rights."
+            lastUpdated="Last Updated: March 2026"
+        >
+            <article className="doc-content">
+                <section className="legal-section" id="section-1"><div className="legal-section-number">01</div><h2>Scope</h2><p>
+                          This GDPR Privacy Notice describes how After Trials processes personal
+                          data in connection with its website, platform, services, communications,
+                          and related activities where the General Data Protection Regulation
+                          (EU) 2016/679 ("GDPR") or another applicable data protection law
+                          applies.
+                        </p><p>
+                          This notice should be read together with the After Trials Privacy
+                          Policy, Cookie Policy, Terms of Service, Community Guidelines, and
+                          any other privacy notices or disclosures presented to you when you
+                          use a particular service.
+                        </p></section><section className="legal-section" id="section-2"><div className="legal-section-number">02</div><h2>Data Controller</h2><p>
+                          The entity responsible for determining how and why your personal data
+                          is processed will depend on the After Trials service you use and your
+                          relationship with After Trials.
+                        </p><p>
+                          Where After Trials acts as a data controller, it determines the
+                          purposes and means of processing your personal data. Where After
+                          Trials processes personal data on behalf of another organization,
+                          After Trials may instead act as a processor or service provider.
+                        </p><p>
+                          If you need to identify the specific After Trials entity responsible
+                          for your data or the applicable controller for a particular service,
+                          please contact us using the details in the
+                          <a href="#section-17">Contact Us</a> section.
+                        </p></section><section className="legal-section" id="section-3"><div className="legal-section-number">03</div><h2>Personal Data We Process</h2><p>
+                          Depending on how you interact with After Trials, we may process
+                          categories of personal data such as:
+                        </p><ul><li>Identity and profile information, such as your name, username, profile information, and professional information you choose to provide.</li><li>Contact information, such as your email address, telephone number, and other contact details.</li><li>Account information, including login credentials, account settings, preferences, and account status.</li><li>Content and communications, including information you submit, publish, upload, send, or otherwise provide through the services.</li><li>Usage and technical information, including device information, browser information, IP address, approximate location derived from technical information, logs, and interactions with the services.</li><li>Transaction and subscription information where applicable.</li><li>Marketing and communications preferences.</li><li>Information you provide when contacting support, reporting content, submitting requests, or otherwise communicating with us.</li></ul><div className="legal-notice"><span className="legal-notice-label">Important</span><p>
+                            Please do not provide sensitive personal data unless the service
+                            specifically requests it and you have a lawful reason to provide it.
+                            Certain categories of information, including health-related
+                            information, may receive additional protection under applicable law.
+                          </p></div></section><section className="legal-section" id="section-4"><div className="legal-section-number">04</div><h2>How We Collect Personal Data</h2><p>We may obtain personal data:</p><ul><li>Directly from you when you create or use an account;</li><li>When you create, upload, publish, submit, or interact with content;</li><li>When you communicate with After Trials, including with customer or technical support;</li><li>Automatically from your device or browser when you use our website or services;</li><li>Through cookies and similar technologies, subject to your applicable choices and permissions;</li><li>From service providers and other third parties where they are permitted to provide the information to us; and</li><li>From publicly available sources where permitted by applicable law.</li></ul></section><section className="legal-section" id="section-5"><div className="legal-section-number">05</div><h2>How We Use Personal Data</h2><p>We may use personal data for purposes including:</p><ul><li>Providing, operating, maintaining, and improving After Trials and its services;</li><li>Creating and administering accounts and profiles;</li><li>Enabling users to communicate, publish content, and participate in the community;</li><li>Personalizing the experience and remembering preferences;</li><li>Responding to questions, requests, complaints, and support inquiries;</li><li>Sending service-related communications;</li><li>Sending marketing communications where permitted and in accordance with your preferences;</li><li>Detecting, investigating, preventing, and addressing fraud, abuse, security incidents, and violations of our terms or guidelines;</li><li>Protecting the rights, safety, security, and property of After Trials, our users, and others;</li><li>Complying with legal and regulatory obligations;</li><li>Establishing, exercising, or defending legal claims; and</li><li>Performing analytics, measuring service performance, and developing new features and services.</li></ul></section><section className="legal-section" id="section-6"><div className="legal-section-number">06</div><h2>Legal Bases for Processing</h2><p>
+                          Where the GDPR applies, we process personal data only where we have
+                          an appropriate legal basis. Depending on the circumstances, this may
+                          include:
+                        </p><ul><li><strong>Performance of a contract:</strong> where processing is necessary to provide a service or perform our agreement with you.</li><li><strong>Legal obligation:</strong> where processing is necessary for us to comply with a legal or regulatory obligation.</li><li><strong>Legitimate interests:</strong> where processing is necessary for our legitimate interests or those of a third party, provided those interests are not overridden by your rights and interests.</li><li><strong>Consent:</strong> where we rely on your consent, such as for certain optional cookies or marketing activities. You may withdraw consent at any time where applicable.</li><li><strong>Vital interests:</strong> in limited circumstances where processing is necessary to protect someone's vital interests.</li></ul><p>
+                          Where we rely on legitimate interests, those interests may include
+                          operating and improving our services, maintaining security, preventing
+                          abuse, communicating with users, and protecting our legal rights.
+                        </p></section><section className="legal-section" id="section-7"><div className="legal-section-number">07</div><h2>Sharing Personal Data</h2><p>
+                          We may disclose personal data where reasonably necessary for the
+                          purposes described in this notice. Recipients may include:
+                        </p><ul><li>Service providers that host, maintain, secure, analyze, support, or otherwise help operate our services;</li><li>Professional advisers, including lawyers, accountants, auditors, insurers, and consultants;</li><li>Authorities, regulators, courts, or other parties where disclosure is required or permitted by law;</li><li>Other users or members of the After Trials community where you choose to make information public or share it through a feature of the service; and</li><li>Organizations involved in a merger, acquisition, financing, restructuring, sale, or other business transaction, subject to applicable legal requirements.</li></ul><p>
+                          We do not authorize third parties to use personal data for purposes
+                          inconsistent with the services they provide to us or the purposes
+                          disclosed in applicable notices.
+                        </p></section><section className="legal-section" id="section-8"><div className="legal-section-number">08</div><h2>International Data Transfers</h2><p>
+                          Your personal data may be processed in countries outside the European
+                          Economic Area ("EEA"), including countries whose data protection laws
+                          may differ from those in your country.
+                        </p><p>
+                          Where required by applicable law, we use appropriate safeguards for
+                          international transfers. Depending on the circumstances, these
+                          safeguards may include an adequacy decision, Standard Contractual
+                          Clauses approved or recognized under applicable law, or another lawful
+                          transfer mechanism.
+                        </p></section><section className="legal-section" id="section-9"><div className="legal-section-number">09</div><h2>Data Retention</h2><p>
+                          We retain personal data only for as long as reasonably necessary for
+                          the purposes for which it was collected, including to provide services,
+                          comply with legal obligations, resolve disputes, enforce agreements,
+                          and protect our legitimate interests.
+                        </p><p>
+                          Retention periods vary depending on the type of information, the
+                          purpose of processing, legal requirements, and whether the information
+                          is necessary to maintain an account or respond to a dispute or
+                          security matter.
+                        </p></section><section className="legal-section" id="section-10"><div className="legal-section-number">10</div><h2>Data Security</h2><p>
+                          We use reasonable technical and organizational measures designed to
+                          protect personal data against unauthorized access, alteration,
+                          disclosure, loss, misuse, or destruction.
+                        </p><p>
+                          No method of transmission, storage, or electronic security is
+                          completely secure. Accordingly, we cannot guarantee absolute security
+                          of personal data.
+                        </p></section><section className="legal-section" id="section-11"><div className="legal-section-number">11</div><h2>Your GDPR Rights</h2><p>
+                          Where the GDPR applies, you may have the following rights, subject to
+                          applicable conditions and limitations:
+                        </p><ul><li><strong>Right of access:</strong> to request confirmation of whether we process your personal data and, where applicable, obtain a copy.</li><li><strong>Right to rectification:</strong> to request correction of inaccurate or incomplete personal data.</li><li><strong>Right to erasure:</strong> to request deletion of personal data in circumstances provided by law.</li><li><strong>Right to restriction:</strong> to request restriction of processing in circumstances provided by law.</li><li><strong>Right to data portability:</strong> to receive certain personal data in a structured, commonly used, machine-readable format and, where technically feasible and legally applicable, request its transmission to another controller.</li><li><strong>Right to object:</strong> to object to processing based on legitimate interests or, in certain circumstances, to direct marketing.</li><li><strong>Right to withdraw consent:</strong> where processing is based on consent, you may withdraw that consent at any time. Withdrawal does not affect the lawfulness of processing carried out before withdrawal.</li><li><strong>Rights relating to automated decision-making:</strong> where applicable, to obtain information and request human intervention or otherwise contest certain solely automated decisions producing legal or similarly significant effects.</li></ul><div className="legal-notice"><span className="legal-notice-label">Supervisory Authority</span><p>
+                            You may also have the right to lodge a complaint with the data
+                            protection supervisory authority in the country where you live,
+                            work, or where you believe an infringement occurred.
+                          </p></div><p>
+                          To exercise your rights, please contact us using the details in the
+                          <a href="#section-17">Contact Us</a> section. We may need to verify
+                          your identity before completing a request.
+                        </p></section><section className="legal-section" id="section-12"><div className="legal-section-number">12</div><h2>Cookies and Similar Technologies</h2><p>
+                          After Trials may use cookies, pixels, local storage, and similar
+                          technologies to operate the website, remember preferences, understand
+                          usage, maintain security, and, where permitted, support analytics or
+                          other optional functions.
+                        </p><p>
+                          Where required, we will request consent before placing or using
+                          non-essential cookies. You can learn more about these technologies
+                          and available choices in our Cookie Policy.
+                        </p></section><section className="legal-section" id="section-13"><div className="legal-section-number">13</div><h2>Automated Decision-Making</h2><p>
+                          We do not intend to make decisions based solely on automated
+                          processing that produce legal effects or similarly significant effects
+                          on you unless permitted by applicable law and subject to any
+                          safeguards required by that law.
+                        </p><p>
+                          Some features may use automated systems for purposes such as security,
+                          fraud detection, content moderation, recommendations, or service
+                          personalization. These functions are not necessarily decisions subject
+                          to Article 22 of the GDPR.
+                        </p></section><section className="legal-section" id="section-14"><div className="legal-section-number">14</div><h2>Children's Data</h2><p>
+                          Our services are not intended for individuals who are not legally
+                          permitted to use them under applicable law. We do not knowingly
+                          collect personal data from children in violation of applicable legal
+                          requirements.
+                        </p><p>
+                          If you believe that a child has provided personal data to us in
+                          circumstances where it should not have been collected, please contact
+                          us so that we can review the matter and take appropriate action.
+                        </p></section><section className="legal-section" id="section-15"><div className="legal-section-number">15</div><h2>Third-Party Services and Links</h2><p>
+                          Our services may contain links to third-party websites, applications,
+                          integrations, or services. Those third parties may collect and process
+                          personal data under their own privacy policies and terms.
+                        </p><p>
+                          This notice does not govern third-party services that we do not
+                          control. We encourage you to review the privacy information provided
+                          by those services before submitting personal data to them.
+                        </p></section><section className="legal-section" id="section-16"><div className="legal-section-number">16</div><h2>Changes to This Notice</h2><p>
+                          We may update this GDPR Privacy Notice from time to time to reflect
+                          changes in our services, processing practices, legal requirements, or
+                          other relevant circumstances.
+                        </p><p>
+                          When we make material changes, we may provide additional notice where
+                          required by applicable law. The "Last Updated" date at the top of
+                          this page indicates when this notice was most recently revised.
+                        </p></section><section className="legal-section" id="section-17"><div className="legal-section-number">17</div><h2>Contact Us</h2><p>
+                          If you have questions about this GDPR Privacy Notice, want to
+                          exercise an applicable data protection right, or have a privacy
+                          concern, please contact After Trials at:
+                        </p><div className="legal-contact-card"><a href="mailto:privacy@aftertrials.com" className="legal-contact-email">
+                            privacy@aftertrials.com
+                          </a></div><p>
+                          If you are submitting a data protection request, please clearly
+                          describe the request and provide enough information for us to
+                          identify the relevant account or information. We may request
+                          additional information where reasonably necessary to verify your
+                          identity and protect personal data from unauthorized disclosure.
+                        </p></section><div className="legal-notice"><span className="legal-notice-label">Related Policies</span><p>This GDPR Privacy Notice should be read together with our:</p><ul><li>Privacy Policy;</li><li>Cookie Policy;</li><li>Terms of Service; and</li><li>Community Guidelines.</li></ul></div>
+            </article>
+        </LegalLayout>
+    );
+}
