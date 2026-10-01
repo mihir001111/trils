@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { Metadata } from 'next';
 import { Footer } from '@/components/layout/Footer';
-import { ContactPageStructuredData } from '@/components/StructuredData';
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://aftertrials.com';
 

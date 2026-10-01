@@ -21,7 +21,7 @@ export function HumanLayerSection() {
 
                 <figure className="human-layer-image">
                     <img
-                        src="https://res.cloudinary.com/dn1hjjczy/image/upload/v1789039350/Add_a_little_bit_of_body_text_ocqfet.png"
+                        src="https://res.cloudinary.com/dn1hjjczy/image/upload/v1790758617/ChatGPT_Image_Sep_29_2026_07_21_23_PM_svgkbf.png"
                         alt="After Trials medical community visual"
                         loading="lazy"
                     />

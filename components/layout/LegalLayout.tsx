@@ -1,18 +1,15 @@
 import Link from 'next/link';
 import { ReactNode } from 'react';
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://aftertrials.com';
-
 interface LegalLayoutProps {
     children: ReactNode;
     title: string;
     subtitle?: string;
     eyebrow: string;
     lastUpdated?: string;
-    path?: string; // e.g. '/privacy' — used for canonical link
 }
 
-export function LegalLayout({ children, title, subtitle, eyebrow, lastUpdated, path }: LegalLayoutProps) {
+export function LegalLayout({ children, title, subtitle, eyebrow, lastUpdated }: LegalLayoutProps) {
     return (
         <div className="legal-page-root">
 

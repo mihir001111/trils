@@ -47,7 +47,7 @@ export function CommunitySection() {
                     <div className="community-conversations-grid">
                         <figure className="community-conversations-card">
                             <img
-                                src="https://res.cloudinary.com/dn1hjjczy/image/upload/c_auto,h_540,w_1564/3_cr2b3i.png"
+                                src="https://res.cloudinary.com/dn1hjjczy/image/upload/v1790758756/76C72B8F-7078-4757-B61C-20FEEF274980_lxf30t.png"
                                 alt="Medical community thread"
                                 loading="lazy"
                             />
@@ -55,7 +55,7 @@ export function CommunitySection() {
 
                         <figure className="community-conversations-card">
                             <img
-                                src="https://res.cloudinary.com/dn1hjjczy/image/upload/c_auto,h_540,w_1564/1_u0qrgb.png"
+                                src="https://res.cloudinary.com/dn1hjjczy/image/upload/v1790758755/312189E7-147B-4C66-AA73-0D31FA1CC9A6_sncfpt.png"
                                 alt="Medical student network thread"
                                 loading="lazy"
                             />
@@ -63,7 +63,7 @@ export function CommunitySection() {
 
                         <figure className="community-conversations-card">
                             <img
-                                src="https://res.cloudinary.com/dn1hjjczy/image/upload/c_crop,g_north_west,h_503,w_1520,x_42,y_184/Add_a_little_bit_of_body_text_2_kvcv4j.png"
+                                src="https://res.cloudinary.com/dn1hjjczy/image/upload/v1790758618/37D15B1B-5A4E-4BF1-A86C-4AD04C5FA588_svhu8x.png"
                                 alt="Medical student network thread"
                                 loading="lazy"
                             />
@@ -71,7 +71,7 @@ export function CommunitySection() {
 
                         <figure className="community-conversations-card">
                             <img
-                                src="https://res.cloudinary.com/dn1hjjczy/image/upload/t_crop_b1e009/2_ydhame.png"
+                                src="https://res.cloudinary.com/dn1hjjczy/image/upload/v1790758617/D2ACB9B7-9E66-4961-A340-CC6EE7CD2490_cfz3kc.png"
                                 alt="Medical student network thread"
                                 loading="lazy"
                             />

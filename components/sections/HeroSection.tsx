@@ -21,7 +21,7 @@ export function HeroSection() {
                 <div className="hero-post-display">
                     <div className="hero-post-item">
                         <img
-                            src="https://res.cloudinary.com/dn1hjjczy/image/upload/v1788795066/Tweet_-1_qp4lgq.png"
+                            src="https://res.cloudinary.com/dn1hjjczy/image/upload/v1790763415/ChatGPT_Image_Sep_30_2026_03_46_29_PM_tbsdzh.png"
                             alt="Medical post on After Trials"
                             loading="eager"
                         />
@@ -29,7 +29,7 @@ export function HeroSection() {
 
                     <div className="hero-post-item offset">
                         <img
-                            src="https://res.cloudinary.com/dn1hjjczy/image/upload/v1788974024/Group_1_xox19c.png"
+                            src="https://res.cloudinary.com/dn1hjjczy/image/upload/v1790758758/C7B5D4BA-089C-4D47-BCF6-22A2A79693F1_mbn9ye.png"
                             alt="Medical case discussion post"
                             loading="eager"
                         />
