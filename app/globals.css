@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* ==========================================================================
-   DESIGN TOKENS — PURE WHITE, ZERO SHADOWS, BLUE BRAND COLOR FROM ROOT
+   DESIGN TOKENS -- PURE WHITE, ZERO SHADOWS, BLUE BRAND COLOR FROM ROOT
    ========================================================================== */
 :root {
   --bg: #ffffff;
@@ -400,7 +400,7 @@ h3 em {
 }
 
 /* ==========================================================================
-   SECTION 3: THE HUMAN LAYER — NOISE OUTSIDE, SIGNAL INSIDE
+   SECTION 3: THE HUMAN LAYER -- NOISE OUTSIDE, SIGNAL INSIDE
    ========================================================================== */
 .section-human-layer {
   padding: 7.5rem 0 8rem;
@@ -551,7 +551,7 @@ h3 em {
 }
 
 /* ==========================================================================
-   SECTION 5: COMMUNITY CONVERSATIONS — LAST TWO IMAGES
+   SECTION 5: COMMUNITY CONVERSATIONS -- LAST TWO IMAGES
    ========================================================================== */
 .section-community-conversations {
   padding: 6.5rem 0 7rem;
@@ -1039,7 +1039,7 @@ h3 em {
 }
 
 /* ==========================================================================
-   MOBILE RHYTHM — TIGHTER SECTION SPACING
+   MOBILE RHYTHM -- TIGHTER SECTION SPACING
    ========================================================================== */
 @media (max-width: 600px) {
   .container {
@@ -1203,7 +1203,7 @@ h3 em {
 }
 
 /* ==========================================================================
-   DESKTOP HERO — MATCH REFERENCE
+   DESKTOP HERO -- MATCH REFERENCE
    ========================================================================== */
 @media (min-width: 992px) {
   .section-hero {
@@ -1268,11 +1268,11 @@ h3 em {
 }
 
 /* ==========================================================================
-   LEGAL / DOC PAGES — COMPLETE DESIGN SYSTEM
+   LEGAL / DOC PAGES -- COMPLETE DESIGN SYSTEM
    Same brand DNA as homepage: pure white, no shadows, blue accents, editorial
    ========================================================================== */
 
-/* ── Root ───────────────────────────────────────────────────────── */
+/* -- Root --------------------------------------------------------- */
 .legal-page-root {
   min-height: 100vh;
   background: #ffffff;
@@ -1280,7 +1280,7 @@ h3 em {
   flex-direction: column;
 }
 
-/* ── Top Bar ────────────────────────────────────────────────────── */
+/* -- Top Bar ------------------------------------------------------ */
 .legal-topbar {
   width: 100%;
   border-bottom: 1px solid var(--border);
@@ -1343,7 +1343,7 @@ h3 em {
   transform: translateX(-2px);
 }
 
-/* ── Hero ───────────────────────────────────────────────────────── */
+/* -- Hero --------------------------------------------------------- */
 .legal-hero {
   border-bottom: 1px solid var(--border);
   background: #ffffff;
@@ -1409,7 +1409,7 @@ h3 em {
   text-transform: uppercase;
 }
 
-/* ── Body ───────────────────────────────────────────────────────── */
+/* -- Body --------------------------------------------------------- */
 .legal-body {
   flex: 1;
   padding: 4rem 0 6rem;
@@ -1429,7 +1429,7 @@ h3 em {
   }
 }
 
-/* ── Document Content Formatting ───────────────────────────────── */
+/* -- Document Content Formatting --------------------------------- */
 .doc-content {
   font-family: var(--font-sans);
 }
@@ -1658,7 +1658,7 @@ h3 em {
   font-style: italic;
 }
 
-/* ── Mobile doc layout ──────────────────────────────────────────── */
+/* -- Mobile doc layout -------------------------------------------- */
 @media (max-width: 600px) {
   .legal-hero {
     padding: 2.5rem 0 2rem;
@@ -2988,7 +2988,7 @@ h3 em {
 }
 
 /* ==========================================================================
-   BLOG ARTICLE PAGE — SEO ELEMENTS
+   BLOG ARTICLE PAGE -- SEO ELEMENTS
    ========================================================================== */
 
 /* Breadcrumb */
