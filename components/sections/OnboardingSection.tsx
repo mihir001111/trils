@@ -9,7 +9,6 @@ import {
     resendSignupOTP,
     mapRoleToUserType,
 } from '@/lib/supabase-auth';
-import DOMPurify from 'isomorphic-dompurify';
 
 type Phase = 'prose' | 'password' | 'otp' | 'success';
 
@@ -207,8 +206,18 @@ function ProsePhase({
     errors,
     onSubmit,
 }: {
-    formData: any;
-    handleChange: any;
+    formData: {
+        fullName: string;
+        role: string;
+        course: string;
+        specialty: string;
+        specialtyCustom: string;
+        email: string;
+        phone: string;
+        password: string;
+        confirmPassword: string;
+    };
+    handleChange: (e: ChangeEvent<HTMLInputElement | HTMLSelectElement>) => void;
     errors: Record<string, string>;
     onSubmit: (e: FormEvent) => void;
 }) {
@@ -325,8 +334,18 @@ function PasswordPhase({
     onSubmit,
     onBack,
 }: {
-    formData: any;
-    handleChange: any;
+    formData: {
+        fullName: string;
+        role: string;
+        course: string;
+        specialty: string;
+        specialtyCustom: string;
+        email: string;
+        phone: string;
+        password: string;
+        confirmPassword: string;
+    };
+    handleChange: (e: ChangeEvent<HTMLInputElement | HTMLSelectElement>) => void;
     errors: Record<string, string>;
     loading: boolean;
     onSubmit: () => void;
