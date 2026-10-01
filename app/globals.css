@@ -1702,8 +1702,10 @@ h3 em {
   }
 }
 
-Pure white background maintained,
-subtle elegant interactions==========================================================================*/
+/* ==========================================================================
+   MOBILE PREMIUM ANIMATIONS & POLISH (600px and below)
+   Pure white background maintained, subtle elegant interactions
+   ========================================================================== */
 
 /* Keyframe Animations */
 @keyframes fadeInUp {
