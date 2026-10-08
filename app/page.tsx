@@ -1,6 +1,7 @@
 // Server Component — HTML is fully rendered on the server for maximum SEO
 import { HeroSection } from '@/components/sections/HeroSection';
 import { PostsGridSection } from '@/components/sections/PostsGridSection';
+import { GlobalNetworkSection } from '@/components/sections/GlobalNetworkSection';
 import { HumanLayerSection } from '@/components/sections/HumanLayerSection';
 import { EcosystemSection } from '@/components/sections/EcosystemSection';
 import { AppMockupSection } from '@/components/sections/AppMockupSection';
@@ -24,6 +25,7 @@ export default function Home() {
             <main>
                 <HeroSection />
                 <PostsGridSection />
+                <GlobalNetworkSection />
                 <HumanLayerSection />
                 <EcosystemSection />
                 <AppMockupSection />
