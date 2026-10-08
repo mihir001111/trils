@@ -61,7 +61,7 @@ export function HeroSection() {
                     flex-shrink: 0;
                 }
 
-                /* ---------- Text ---------- */
+                /* Text adjustments for landscape */
                 .copy {
                     text-align: center;
                     width: 100%;
@@ -69,6 +69,30 @@ export function HeroSection() {
                     padding-top: clamp(30px, 6vh, 70px);
                     position: relative;
                     z-index: 5;
+                }
+                
+                /* Compact text in landscape to give more room to image */
+                @media (orientation: landscape) and (max-height: 600px) {
+                    .copy {
+                        padding-top: clamp(10px, 2vh, 20px);
+                        max-width: 600px;
+                    }
+                    
+                    .title {
+                        font-size: clamp(2rem, 4vw, 3rem);
+                        line-height: 1.1;
+                    }
+                    
+                    .subtitle {
+                        font-size: clamp(9px, 1.5vh, 14px);
+                        margin-top: clamp(4px, 1vh, 12px);
+                    }
+                    
+                    .cta-button {
+                        margin-top: clamp(12px, 2vh, 20px);
+                        padding: 8px 20px;
+                        font-size: clamp(12px, 1.5vh, 14px);
+                    }
                 }
 
                 .title {
@@ -158,6 +182,15 @@ export function HeroSection() {
                     container-type: inline-size;
                     flex-shrink: 0;
                 }
+                
+                /* Landscape mode: make frame wider and taller for better visibility */
+                @media (orientation: landscape) and (max-height: 600px) {
+                    .frame {
+                        width: 100vw;
+                        max-width: 100vw;
+                        height: 120%;
+                    }
+                }
 
                 .portrait {
                     position: absolute;
@@ -168,6 +201,15 @@ export function HeroSection() {
                     object-position: 50% 100%;
                     pointer-events: none;
                     user-select: none;
+                }
+                
+                /* Landscape mode: make image bigger and adjust positioning */
+                @media (orientation: landscape) and (max-height: 600px) {
+                    .portrait {
+                        object-fit: cover;
+                        object-position: 50% 80%;
+                        transform: scale(1.3);
+                    }
                 }
                 
                 /* Desktop: use lineup image, no mask */
