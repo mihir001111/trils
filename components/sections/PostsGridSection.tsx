@@ -14,41 +14,59 @@ export function PostsGridSection() {
                     </h2>
                 </div>
 
-                {/* Unique bento-style grid */}
-                <div className="bento-grid">
-                    <div className="bento-card card-1">
-                        <div className="card-accent"></div>
-                        <div className="card-content">
-                            <p className="card-quote">
-                                "Finally found a space where I can discuss complex cases with peers who actually understand the nuances."
-                            </p>
-                            <div className="card-footer">
-                                <span className="location-badge">🇮🇹 Rome, Italy</span>
+                {/* Ultra-creative floating cards with user images */}
+                <div className="creative-grid">
+                    <div className="float-card card-rome">
+                        <div className="card-visual">
+                            <div className="user-stack">
+                                <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="User" className="user-img" />
+                                <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="User" className="user-img" />
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User" className="user-img" />
                             </div>
+                            <div className="activity-pulse">
+                                <span className="pulse-dot"></span>
+                                <span className="pulse-text">live now</span>
+                            </div>
+                        </div>
+                        <div className="card-label">
+                            <span className="label-icon">🇮🇹</span>
+                            <span className="label-text">Rome</span>
                         </div>
                     </div>
 
-                    <div className="bento-card card-2">
-                        <div className="card-accent"></div>
-                        <div className="card-content">
-                            <p className="card-quote">
-                                "The research collaborations I've built here have genuinely changed my approach to patient care."
-                            </p>
-                            <div className="card-footer">
-                                <span className="location-badge">🇺🇸 NY, US</span>
+                    <div className="float-card card-ny">
+                        <div className="card-visual">
+                            <div className="user-stack">
+                                <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="User" className="user-img" />
+                                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="User" className="user-img" />
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" className="user-img" />
                             </div>
+                            <div className="activity-pulse">
+                                <span className="pulse-dot"></span>
+                                <span className="pulse-text">live now</span>
+                            </div>
+                        </div>
+                        <div className="card-label">
+                            <span className="label-icon">🇺🇸</span>
+                            <span className="label-text">New York</span>
                         </div>
                     </div>
 
-                    <div className="bento-card card-3">
-                        <div className="card-accent"></div>
-                        <div className="card-content">
-                            <p className="card-quote">
-                                "Being able to connect with specialists without the noise of traditional social media."
-                            </p>
-                            <div className="card-footer">
-                                <span className="location-badge">🇨🇳 Beijing, China</span>
+                    <div className="float-card card-beijing">
+                        <div className="card-visual">
+                            <div className="user-stack">
+                                <img src="https://randomuser.me/api/portraits/women/90.jpg" alt="User" className="user-img" />
+                                <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="User" className="user-img" />
+                                <img src="https://randomuser.me/api/portraits/women/76.jpg" alt="User" className="user-img" />
                             </div>
+                            <div className="activity-pulse">
+                                <span className="pulse-dot"></span>
+                                <span className="pulse-text">live now</span>
+                            </div>
+                        </div>
+                        <div className="card-label">
+                            <span className="label-icon">🇨🇳</span>
+                            <span className="label-text">Beijing</span>
                         </div>
                     </div>
                 </div>
@@ -57,26 +75,14 @@ export function PostsGridSection() {
             <style jsx>{`
                 .section-posts-grid {
                     padding: 6rem 0;
-                    background: linear-gradient(180deg, #ffffff 0%, #f8f9fb 100%);
+                    background: #ffffff;
                     position: relative;
                     overflow: hidden;
                 }
 
-                .section-posts-grid::before {
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    background: radial-gradient(circle at 20% 50%, rgba(99, 102, 241, 0.03) 0%, transparent 50%),
-                                radial-gradient(circle at 80% 80%, rgba(168, 85, 247, 0.03) 0%, transparent 50%);
-                    pointer-events: none;
-                }
-
                 @media (min-width: 768px) {
                     .section-posts-grid {
-                        padding: 8rem 0;
+                        padding: 8rem 0 10rem;
                     }
                 }
 
@@ -87,156 +93,223 @@ export function PostsGridSection() {
                     z-index: 1;
                 }
 
-                .bento-grid {
-                    display: grid;
-                    grid-template-columns: 1fr;
-                    gap: 1.5rem;
-                    max-width: 1200px;
+                .creative-grid {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 3rem;
+                    max-width: 1400px;
                     margin: 0 auto;
                     padding: 0 1rem;
                     position: relative;
-                    z-index: 1;
                 }
 
                 @media (min-width: 768px) {
-                    .bento-grid {
-                        grid-template-columns: repeat(3, 1fr);
-                        gap: 2rem;
+                    .creative-grid {
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: flex-start;
+                        gap: 0;
+                        padding: 0 2rem;
                     }
                 }
 
-                .bento-card {
+                .float-card {
                     position: relative;
-                    background: rgba(255, 255, 255, 0.8);
-                    backdrop-filter: blur(20px);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 1.5rem;
+                    transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+                }
+
+                @media (min-width: 768px) {
+                    .card-rome {
+                        transform: translateY(-40px) rotate(-8deg);
+                        z-index: 3;
+                    }
+
+                    .card-ny {
+                        transform: translateY(20px) rotate(4deg) translateX(-30px);
+                        z-index: 2;
+                    }
+
+                    .card-beijing {
+                        transform: translateY(-20px) rotate(-5deg) translateX(-60px);
+                        z-index: 1;
+                    }
+
+                    .float-card:hover {
+                        transform: translateY(-60px) rotate(0deg) scale(1.05) !important;
+                        z-index: 10 !important;
+                    }
+                }
+
+                .card-visual {
+                    position: relative;
+                    width: 280px;
+                    height: 360px;
+                    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
                     border-radius: 24px;
-                    padding: 2.5rem;
+                    padding: 2rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
                     overflow: hidden;
-                    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-                    border: 1px solid rgba(255, 255, 255, 0.5);
-                    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.04);
-                }
-
-                .bento-card::before {
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
-                    opacity: 0;
-                    transition: opacity 0.4s ease;
-                }
-
-                .bento-card:hover {
-                    transform: translateY(-8px);
-                    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
-                    border-color: rgba(99, 102, 241, 0.2);
-                }
-
-                .bento-card:hover::before {
-                    opacity: 1;
-                }
-
-                .card-accent {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 4px;
                     transition: all 0.4s ease;
                 }
 
-                .card-1 .card-accent {
-                    background: linear-gradient(90deg, #10b981 0%, #34d399 100%);
+                .card-rome .card-visual {
+                    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
                 }
 
-                .card-2 .card-accent {
-                    background: linear-gradient(90deg, #3b82f6 0%, #60a5fa 100%);
+                .card-ny .card-visual {
+                    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
                 }
 
-                .card-3 .card-accent {
-                    background: linear-gradient(90deg, #f59e0b 0%, #fbbf24 100%);
+                .card-beijing .card-visual {
+                    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
                 }
 
-                .bento-card:hover .card-accent {
-                    height: 6px;
+                .card-visual::before {
+                    content: '';
+                    position: absolute;
+                    top: -50%;
+                    right: -50%;
+                    width: 200%;
+                    height: 200%;
+                    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+                    animation: float 8s ease-in-out infinite;
                 }
 
-                .card-content {
+                @keyframes float {
+                    0%, 100% { transform: translate(0, 0); }
+                    50% { transform: translate(-20px, -20px); }
+                }
+
+                .float-card:hover .card-visual {
+                    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.25);
+                    transform: translateY(-10px);
+                }
+
+                .user-stack {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    z-index: 1;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                }
+
+                .user-img {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    border: 4px solid rgba(255, 255, 255, 0.3);
+                    object-fit: cover;
+                    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+                    background: #fff;
+                }
+
+                .user-img:not(:first-child) {
+                    margin-left: -35px;
+                }
+
+                .float-card:hover .user-img {
+                    border-color: rgba(255, 255, 255, 0.8);
+                    transform: scale(1.1);
+                }
+
+                .float-card:hover .user-img:nth-child(1) {
+                    transform: translateX(-15px) scale(1.1);
+                }
+
+                .float-card:hover .user-img:nth-child(3) {
+                    transform: translateX(15px) scale(1.1);
+                }
+
+                .activity-pulse {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    background: rgba(255, 255, 255, 0.2);
+                    backdrop-filter: blur(10px);
+                    padding: 0.5rem 1rem;
+                    border-radius: 20px;
                     position: relative;
                     z-index: 1;
                 }
 
-                .card-quote {
-                    margin: 0 0 2rem;
-                    font-size: clamp(1.0625rem, 2vw, 1.1875rem);
-                    line-height: 1.7;
-                    color: #1e293b;
-                    font-weight: 400;
-                    letter-spacing: -0.01em;
+                .pulse-dot {
+                    width: 8px;
+                    height: 8px;
+                    background: #22c55e;
+                    border-radius: 50%;
+                    animation: pulse 2s ease-in-out infinite;
+                    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
                 }
 
-                .card-footer {
+                @keyframes pulse {
+                    0%, 100% {
+                        transform: scale(1);
+                        box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+                    }
+                    50% {
+                        transform: scale(1.2);
+                        box-shadow: 0 0 0 8px rgba(34, 197, 94, 0);
+                    }
+                }
+
+                .pulse-text {
+                    color: #ffffff;
+                    font-size: 0.875rem;
+                    font-weight: 600;
+                    text-transform: lowercase;
+                    letter-spacing: 0.5px;
+                }
+
+                .card-label {
                     display: flex;
                     align-items: center;
                     gap: 0.75rem;
-                }
-
-                .location-badge {
-                    display: inline-flex;
-                    align-items: center;
-                    gap: 0.5rem;
-                    padding: 0.5rem 1rem;
-                    background: rgba(15, 23, 42, 0.04);
-                    border-radius: 12px;
-                    font-size: 0.875rem;
-                    font-weight: 500;
-                    color: #475569;
-                    backdrop-filter: blur(10px);
+                    background: #ffffff;
+                    padding: 0.75rem 1.5rem;
+                    border-radius: 16px;
+                    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
                     transition: all 0.3s ease;
                 }
 
-                .bento-card:hover .location-badge {
-                    background: rgba(15, 23, 42, 0.06);
-                    transform: scale(1.05);
+                .float-card:hover .card-label {
+                    transform: scale(1.1);
+                    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
                 }
 
-                /* Unique asymmetric heights for desktop */
-                @media (min-width: 768px) {
-                    .card-1 {
-                        transform: translateY(-10px);
-                    }
+                .label-icon {
+                    font-size: 1.5rem;
+                }
 
-                    .card-2 {
-                        transform: translateY(10px);
-                    }
-
-                    .card-3 {
-                        transform: translateY(-5px);
-                    }
-
-                    .card-1:hover {
-                        transform: translateY(-20px);
-                    }
-
-                    .card-2:hover {
-                        transform: translateY(0);
-                    }
-
-                    .card-3:hover {
-                        transform: translateY(-15px);
-                    }
+                .label-text {
+                    font-size: 1rem;
+                    font-weight: 600;
+                    color: #1e293b;
+                    letter-spacing: -0.02em;
                 }
 
                 @media (max-width: 767px) {
-                    .bento-card {
-                        padding: 2rem;
+                    .card-visual {
+                        width: 260px;
+                        height: 340px;
                     }
 
-                    .card-quote {
-                        margin-bottom: 1.5rem;
+                    .user-img {
+                        width: 70px;
+                        height: 70px;
+                    }
+
+                    .user-img:not(:first-child) {
+                        margin-left: -30px;
                     }
                 }
             `}</style>
