@@ -25,30 +25,6 @@ export function AppMockupSection() {
                         className="mockup-image"
                     />
                 </div>
-
-                <div className="app-features">
-                    <div className="feature-item">
-                        <div className="feature-icon">📱</div>
-                        <h3 className="feature-title">Mobile-First Design</h3>
-                        <p className="feature-text">
-                            Built for healthcare professionals on the move. Access your network anytime, anywhere.
-                        </p>
-                    </div>
-                    <div className="feature-item">
-                        <div className="feature-icon">🔔</div>
-                        <h3 className="feature-title">Real-Time Updates</h3>
-                        <p className="feature-text">
-                            Stay informed with instant notifications for discussions, collaborations, and opportunities.
-                        </p>
-                    </div>
-                    <div className="feature-item">
-                        <div className="feature-icon">🔒</div>
-                        <h3 className="feature-title">Secure & Private</h3>
-                        <p className="feature-text">
-                            Your professional conversations protected with enterprise-grade security and privacy.
-                        </p>
-                    </div>
-                </div>
             </div>
 
             <style jsx>{`
@@ -80,7 +56,7 @@ export function AppMockupSection() {
 
                 .mockup-container {
                     max-width: 1100px;
-                    margin: 0 auto 5rem;
+                    margin: 0 auto;
                     padding: 0 1rem;
                     display: flex;
                     justify-content: center;
@@ -98,64 +74,6 @@ export function AppMockupSection() {
 
                 .mockup-image:hover {
                     transform: scale(1.02);
-                }
-
-                @media (max-width: 767px) {
-                    .mockup-container {
-                        margin-bottom: 3rem;
-                    }
-                }
-
-                .app-features {
-                    display: grid;
-                    grid-template-columns: 1fr;
-                    gap: 2.5rem;
-                    max-width: 1000px;
-                    margin: 0 auto;
-                    padding: 0 1rem;
-                }
-
-                @media (min-width: 768px) {
-                    .app-features {
-                        grid-template-columns: repeat(3, 1fr);
-                        gap: 3rem;
-                    }
-                }
-
-                .feature-item {
-                    text-align: center;
-                    padding: 2rem 1.5rem;
-                    border-radius: 12px;
-                    background: #fafafa;
-                    transition: all 0.3s ease;
-                }
-
-                .feature-item:hover {
-                    background: #f5f5f5;
-                    transform: translateY(-4px);
-                }
-
-                .feature-icon {
-                    font-size: 3rem;
-                    margin-bottom: 1rem;
-                    line-height: 1;
-                }
-
-                .feature-title {
-                    font-family: var(--font-sans);
-                    font-size: 1.125rem;
-                    font-weight: 600;
-                    color: var(--text);
-                    margin: 0 0 0.75rem 0;
-                    letter-spacing: -0.01em;
-                }
-
-                .feature-text {
-                    font-family: var(--font-sans);
-                    font-size: 0.9375rem;
-                    line-height: 1.6;
-                    color: var(--text-secondary);
-                    margin: 0;
                 }
             `}</style>
         </section>
