@@ -625,12 +625,54 @@ h3 em {
   width: 100%;
   overflow: hidden;
   margin: 0;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .next-feature-image img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+/* Show desktop image by default (desktop + landscape) */
+.desktop-team-image {
+  display: block;
+}
+
+.mobile-team-image {
+  display: none;
+}
+
+/* Mobile portrait: show mobile image */
+@media (max-width: 767px) and (orientation: portrait) {
+  .desktop-team-image {
+    display: none;
+  }
+
+  .mobile-team-image {
+    display: block;
+  }
+
+  .next-feature-image {
+    max-width: 100%;
+  }
+}
+
+/* Mobile/iPad landscape: show desktop image */
+@media (max-width: 1024px) and (orientation: landscape) {
+  .desktop-team-image {
+    display: block;
+  }
+
+  .mobile-team-image {
+    display: none;
+  }
+
+  .next-feature-image {
+    max-width: 700px;
+  }
 }
 
 @media (max-width: 600px) {

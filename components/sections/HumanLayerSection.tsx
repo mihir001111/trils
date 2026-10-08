@@ -13,10 +13,7 @@ export function HumanLayerSection() {
                         </i>
                     </h2>
 
-                    <p className="human-layer-desc">
-                        After Trials is built to make those conversations easier to find — without turning them into
-                        content.
-                    </p>
+
                 </div>
 
                 <div className="human-layer-testimonials">

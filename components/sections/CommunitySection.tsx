@@ -92,10 +92,19 @@ export function CommunitySection() {
                     </div>
 
                     <figure className="next-feature-image">
+                        {/* Desktop and landscape images */}
                         <img
-                            src="https://res.cloudinary.com/dn1hjjczy/image/upload/v1789066941/copy_of_chatgpt_imagek_sep_10_2026_11_12_13_pm_yiv0ho.png"
-                            alt="After Trials community feature"
+                            src="https://res.cloudinary.com/dn1hjjczy/image/upload/v1791106022/Healthcare_Team_Lineup_on_Transparent_Background_vi1fqv.png"
+                            alt="After Trials healthcare team community"
                             loading="lazy"
+                            className="desktop-team-image"
+                        />
+                        {/* Mobile portrait image */}
+                        <img
+                            src="https://res.cloudinary.com/dn1hjjczy/image/upload/v1791288619/Friendly_Healthcare_Team_Illustration_uba54x.png"
+                            alt="After Trials healthcare team community"
+                            loading="lazy"
+                            className="mobile-team-image"
                         />
                     </figure>
                 </div>

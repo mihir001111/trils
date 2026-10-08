@@ -173,14 +173,14 @@ export function HeroSection() {
                 /* Desktop: use lineup image, no mask */
                 @media (min-width: 768px) {
                     .portrait {
-                        content: url('https://res.cloudinary.com/dn1hjjczy/image/upload/v1791106022/Healthcare_Team_Lineup_on_Transparent_Background_vi1fqv.png');
+                        content: url('https://res.cloudinary.com/dn1hjjczy/image/upload/v1789066941/copy_of_chatgpt_imagek_sep_10_2026_11_12_13_pm_yiv0ho.png');
                     }
                 }
                 
                 /* Mobile portrait: use team illustration */
                 @media (max-width: 767px) and (orientation: portrait) {
                     .portrait {
-                        content: url('https://res.cloudinary.com/dn1hjjczy/image/upload/v1791288619/Friendly_Healthcare_Team_Illustration_uba54x.png');
+                        content: url('https://res.cloudinary.com/dn1hjjczy/image/upload/v1789066941/copy_of_chatgpt_imagek_sep_10_2026_11_12_13_pm_yiv0ho.png');
                     }
                 }
                 
@@ -188,7 +188,7 @@ export function HeroSection() {
                 @media (max-width: 767px) and (orientation: landscape),
                        (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
                     .portrait {
-                        content: url('https://res.cloudinary.com/dn1hjjczy/image/upload/v1791106022/Healthcare_Team_Lineup_on_Transparent_Background_vi1fqv.png');
+                        content: url('https://res.cloudinary.com/dn1hjjczy/image/upload/v1789066941/copy_of_chatgpt_imagek_sep_10_2026_11_12_13_pm_yiv0ho.png');
                     }
                 }
 

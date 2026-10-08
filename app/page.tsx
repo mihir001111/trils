@@ -10,6 +10,7 @@ import { CommunitySection } from '@/components/sections/CommunitySection';
 import { OnboardingSection } from '@/components/sections/OnboardingSection';
 import { Footer } from '@/components/layout/Footer';
 import { MobileAnimations } from '@/components/MobileAnimations';
+import { ScrollAnimations } from '@/components/ScrollAnimations';
 import { HomepageStructuredData } from '@/components/StructuredData';
 import { ReferralCapture } from '@/components/ReferralCapture';
 
@@ -20,6 +21,8 @@ export default function Home() {
             <HomepageStructuredData />
             {/* Thin client component for referral code capture */}
             <ReferralCapture />
+            {/* Scroll-based animations */}
+            <ScrollAnimations />
             {/* Mobile animations — client-only, doesn't affect SSR */}
             <MobileAnimations />
             <main>

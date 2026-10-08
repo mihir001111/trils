@@ -7,9 +7,8 @@ export function GlobalNetworkSection() {
                 <div className="section-head">
                     <h2 className="section-title-large">
                         connecting healthcare professionals
-                        <br />
                         <i>
-                            <em>worldwide.</em>
+                            <em> worldwide.</em>
                         </i>
                     </h2>
                     <p className="section-description">
