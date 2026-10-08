@@ -1840,15 +1840,7 @@ h3 em {
     position: relative;
   }
 
-  .mobile-section-title::after {
-    content: '';
-    position: absolute;
-    bottom: -8px;
-    left: 0;
-    height: 1px;
-    background: var(--at-blue);
-    animation: drawLine 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both;
-  }
+  /* Removed blue underline on mobile section titles */
 
   /* Card Stagger Animations */
   .mobile-card-1 {
