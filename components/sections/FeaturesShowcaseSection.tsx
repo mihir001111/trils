@@ -30,7 +30,7 @@ export function FeaturesShowcaseSection() {
             <style jsx>{`
                 .section-features-showcase {
                     padding: 6rem 0;
-                    background: #fafafa;
+                    background: #ffffff;
                     position: relative;
                 }
 
@@ -55,7 +55,7 @@ export function FeaturesShowcaseSection() {
                 }
 
                 .showcase-container {
-                    max-width: 1200px;
+                    max-width: 900px;
                     margin: 0 auto;
                     padding: 0 1rem;
                     display: flex;
@@ -68,18 +68,17 @@ export function FeaturesShowcaseSection() {
                     height: auto;
                     max-width: 100%;
                     object-fit: contain;
-                    border-radius: 16px;
-                    filter: drop-shadow(0 25px 70px rgba(0, 0, 0, 0.1));
                     transition: transform 0.3s ease;
                 }
 
                 .showcase-image:hover {
                     transform: scale(1.01);
                 }
-
+                
+                /* Larger on mobile */
                 @media (max-width: 767px) {
-                    .showcase-image {
-                        border-radius: 12px;
+                    .showcase-container {
+                        max-width: 100%;
                     }
                 }
             `}</style>

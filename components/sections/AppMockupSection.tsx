@@ -55,7 +55,7 @@ export function AppMockupSection() {
                 }
 
                 .mockup-container {
-                    max-width: 1100px;
+                    max-width: 800px;
                     margin: 0 auto;
                     padding: 0 1rem;
                     display: flex;
@@ -68,12 +68,18 @@ export function AppMockupSection() {
                     height: auto;
                     max-width: 100%;
                     object-fit: contain;
-                    filter: drop-shadow(0 20px 60px rgba(0, 0, 0, 0.08));
                     transition: transform 0.3s ease;
                 }
 
                 .mockup-image:hover {
-                    transform: scale(1.02);
+                    transform: scale(1.01);
+                }
+                
+                /* Larger on mobile */
+                @media (max-width: 767px) {
+                    .mockup-container {
+                        max-width: 100%;
+                    }
                 }
             `}</style>
         </section>
