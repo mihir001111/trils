@@ -11,8 +11,8 @@ export function AppMockupSection() {
                         <em>anywhere you go.</em>
                     </h2>
                     <p className="section-description">
-                        Connect with colleagues who understand the weight of clinical decisions. Share experiences,
-                        seek guidance on complex cases, and build meaningful relationships within our trusted community.
+                        Stay connected with your medical community on the go. Share insights,
+                        collaborate on cases, and advance your career—all from your mobile device.
                     </p>
                 </div>
 
@@ -45,13 +45,12 @@ export function AppMockupSection() {
                 }
 
                 .section-description {
-                    font-family: 'Times New Roman', Times, Georgia, serif;
-                    font-size: clamp(1.0625rem, 2vw, 1.1875rem);
-                    line-height: 1.75;
+                    font-family: var(--font-sans);
+                    font-size: clamp(1rem, 2vw, 1.125rem);
+                    line-height: 1.7;
                     color: var(--text-secondary);
                     max-width: 680px;
                     margin: 1.5rem auto 0;
-                    font-weight: 400;
                 }
 
                 .mockup-container {

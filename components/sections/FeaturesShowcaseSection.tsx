@@ -11,7 +11,8 @@ export function FeaturesShowcaseSection() {
                         <em>thrive in medicine.</em>
                     </h2>
                     <p className="section-description">
-                        Discover tools built for clinicians who need more than another social network. Access curated opportunities, engage in meaningful dialogue, and navigate your career with resources tailored to the realities of modern healthcare practice.
+                        From clinical discussions to career opportunities, After Trials provides
+                        a comprehensive platform designed specifically for healthcare professionals.
                     </p>
                 </div>
 
@@ -44,10 +45,9 @@ export function FeaturesShowcaseSection() {
                 }
 
                 .section-description {
-                    font-family: 'Times New Roman', Times, Georgia, serif;
-                    font-size: clamp(1.0625rem, 2vw, 1.1875rem);
-                    font-weight: 400;
-                    line-height: 1.75;
+                    font-family: var(--font-sans);
+                    font-size: clamp(1rem, 2vw, 1.125rem);
+                    line-height: 1.7;
                     color: var(--text-secondary);
                     max-width: 680px;
                     margin: 1.5rem auto 0;
