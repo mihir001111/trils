@@ -4,6 +4,7 @@ import { PostsGridSection } from '@/components/sections/PostsGridSection';
 import { HumanLayerSection } from '@/components/sections/HumanLayerSection';
 import { EcosystemSection } from '@/components/sections/EcosystemSection';
 import { AppMockupSection } from '@/components/sections/AppMockupSection';
+import { FeaturesShowcaseSection } from '@/components/sections/FeaturesShowcaseSection';
 import { CommunitySection } from '@/components/sections/CommunitySection';
 import { OnboardingSection } from '@/components/sections/OnboardingSection';
 import { Footer } from '@/components/layout/Footer';
@@ -26,6 +27,7 @@ export default function Home() {
                 <HumanLayerSection />
                 <EcosystemSection />
                 <AppMockupSection />
+                <FeaturesShowcaseSection />
                 <CommunitySection />
                 <OnboardingSection />
                 <Footer />
