@@ -28,7 +28,7 @@ export function HeroSection() {
                     grid-template-rows: auto auto minmax(0, 1fr);
                     justify-items: center;
                     padding: max(clamp(10px, 2.4vh, 28px), env(safe-area-inset-top)) clamp(14px, 4vw, 48px) 0;
-                    background: linear-gradient(180deg, #f6f7fb 0%, #ffffff 65%);
+                    background: #ffffff;
                     color: var(--ink);
                     font-family: var(--font);
                     overflow: hidden;
@@ -177,10 +177,18 @@ export function HeroSection() {
                     }
                 }
                 
-                /* Mobile: use team illustration, no mask */
-                @media (max-width: 767px) {
+                /* Mobile portrait: use team illustration */
+                @media (max-width: 767px) and (orientation: portrait) {
                     .portrait {
                         content: url('https://res.cloudinary.com/dn1hjjczy/image/upload/v1791288619/Friendly_Healthcare_Team_Illustration_uba54x.png');
+                    }
+                }
+                
+                /* Mobile/iPad landscape: use desktop image */
+                @media (max-width: 767px) and (orientation: landscape),
+                       (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+                    .portrait {
+                        content: url('https://res.cloudinary.com/dn1hjjczy/image/upload/v1791106022/Healthcare_Team_Lineup_on_Transparent_Background_vi1fqv.png');
                     }
                 }
 
