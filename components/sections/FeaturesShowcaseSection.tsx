@@ -5,7 +5,6 @@ export function FeaturesShowcaseSection() {
         <section className="section-features-showcase" id="features-showcase">
             <div className="container">
                 <div className="section-head">
-                    <span className="kicker">Powerful Features</span>
                     <h2 className="section-title-large">
                         Everything you need to
                         <br />

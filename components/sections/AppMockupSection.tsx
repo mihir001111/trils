@@ -5,7 +5,6 @@ export function AppMockupSection() {
         <section className="section-app-mockup" id="app-preview">
             <div className="container">
                 <div className="section-head">
-                    <span className="kicker">Experience the Platform</span>
                     <h2 className="section-title-large">
                         Your professional network,
                         <br />
