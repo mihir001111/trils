@@ -3,6 +3,7 @@ import { HeroSection } from '@/components/sections/HeroSection';
 import { PostsGridSection } from '@/components/sections/PostsGridSection';
 import { HumanLayerSection } from '@/components/sections/HumanLayerSection';
 import { EcosystemSection } from '@/components/sections/EcosystemSection';
+import { AppMockupSection } from '@/components/sections/AppMockupSection';
 import { CommunitySection } from '@/components/sections/CommunitySection';
 import { OnboardingSection } from '@/components/sections/OnboardingSection';
 import { Footer } from '@/components/layout/Footer';
@@ -24,6 +25,7 @@ export default function Home() {
                 <PostsGridSection />
                 <HumanLayerSection />
                 <EcosystemSection />
+                <AppMockupSection />
                 <CommunitySection />
                 <OnboardingSection />
                 <Footer />
