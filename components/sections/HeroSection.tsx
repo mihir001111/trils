@@ -180,7 +180,7 @@ export function HeroSection() {
                 /* Mobile portrait: use app screenshot */
                 @media (max-width: 767px) and (orientation: portrait) {
                     .portrait {
-                        content: url('https://res.cloudinary.com/dn1hjjczy/image/upload/v1777455394/628shots_so_mtagyl.png');
+                        content: url('https://res.cloudinary.com/dn1hjjczy/image/upload/c_crop,g_north_west,h_1395,w_666,x_136,y_133/After_Trials_Smartphone_Mockup_bc9yo4.png');
                     }
                     
                     .subtitle {
