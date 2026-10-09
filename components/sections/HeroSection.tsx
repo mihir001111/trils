@@ -187,8 +187,8 @@ export function HeroSection() {
                 /* Mobile: align image to bottom */
                 @media (max-width: 767px) and (orientation: portrait) {
                     .stage {
-                        align-items: flex-end;
-                        padding: 0;
+                        align-items: center;
+                        padding: clamp(20px, 4vh, 32px) 0;
                     }
                 }
 
@@ -255,7 +255,7 @@ export function HeroSection() {
                     .mobile-cta {
                         display: flex;
                         justify-content: center;
-                        padding: clamp(16px, 3vh, 24px) clamp(14px, 4vw, 48px) clamp(24px, 4vh, 36px);
+                        padding: clamp(20px, 4vh, 32px) clamp(14px, 4vw, 48px) clamp(24px, 4vh, 36px);
                         width: 100%;
                     }
                     
