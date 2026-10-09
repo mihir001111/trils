@@ -25,7 +25,7 @@ export function HeroSection() {
                     height: 100vh;
                     height: 100svh;
                     display: grid;
-                    grid-template-rows: auto auto minmax(0, 1fr);
+                    grid-template-rows: auto auto minmax(0, 1fr) auto;
                     justify-items: center;
                     padding: max(clamp(10px, 2.4vh, 28px), env(safe-area-inset-top)) clamp(14px, 4vw, 48px) 0;
                     background: #ffffff;
@@ -33,6 +33,13 @@ export function HeroSection() {
                     font-family: var(--font);
                     overflow: hidden;
                     box-sizing: border-box;
+                }
+                
+                /* Desktop: remove the extra row */
+                @media (min-width: 768px) {
+                    .hero {
+                        grid-template-rows: auto auto minmax(0, 1fr);
+                    }
                 }
 
                 .hero *,
@@ -54,6 +61,13 @@ export function HeroSection() {
                     letter-spacing: -0.01em;
                     text-decoration: none;
                 }
+                
+                /* Mobile: reduce logo top spacing */
+                @media (max-width: 767px) and (orientation: portrait) {
+                    .hero {
+                        padding-top: clamp(8px, 1.5vh, 16px);
+                    }
+                }
 
                 .logo svg {
                     width: 1.25em;
@@ -66,9 +80,16 @@ export function HeroSection() {
                     text-align: center;
                     width: 100%;
                     max-width: 720px;
-                    padding-top: clamp(30px, 6vh, 70px);
+                    padding-top: clamp(20px, 4vh, 50px);
                     position: relative;
                     z-index: 5;
+                }
+                
+                /* Mobile: reduce top padding even more */
+                @media (max-width: 767px) and (orientation: portrait) {
+                    .copy {
+                        padding-top: clamp(8px, 1.5vh, 16px);
+                    }
                 }
 
                 .title {
@@ -84,6 +105,13 @@ export function HeroSection() {
                     opacity: 1;
                     background: none;
                     -webkit-text-fill-color: currentColor;
+                }
+                
+                /* Mobile: smaller title */
+                @media (max-width: 767px) and (orientation: portrait) {
+                    .title {
+                        font-size: clamp(2.2rem, 8vw, 2.8rem);
+                    }
                 }
                 
                 .title em {
@@ -120,6 +148,13 @@ export function HeroSection() {
                     text-decoration: none;
                     transition: all 0.25s ease;
                     letter-spacing: -0.01em;
+                }
+                
+                /* Mobile: hide CTA in copy section, show it after image */
+                @media (max-width: 767px) and (orientation: portrait) {
+                    .copy .cta-button {
+                        display: none;
+                    }
                 }
 
                 .cta-button:hover {
@@ -203,6 +238,24 @@ export function HeroSection() {
                     }
                 }
 
+                /* Mobile CTA after image */
+                .mobile-cta {
+                    display: none;
+                }
+                
+                @media (max-width: 767px) and (orientation: portrait) {
+                    .mobile-cta {
+                        display: flex;
+                        justify-content: center;
+                        padding: clamp(16px, 3vh, 24px) clamp(14px, 4vw, 48px) clamp(20px, 4vh, 32px);
+                        width: 100%;
+                    }
+                    
+                    .mobile-cta .cta-button {
+                        display: inline-flex;
+                    }
+                }
+
                 @media (prefers-reduced-motion: reduce) {
                     * {
                         animation: none !important;
@@ -245,6 +298,16 @@ export function HeroSection() {
                         loading="eager"
                     />
                 </div>
+            </div>
+
+            {/* Mobile CTA after image */}
+            <div className="mobile-cta">
+                <a href="#onboarding" className="cta-button">
+                    Join the Network
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
             </div>
         </section>
     );
