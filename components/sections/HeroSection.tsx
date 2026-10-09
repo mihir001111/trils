@@ -183,6 +183,14 @@ export function HeroSection() {
                     align-items: flex-end;
                     justify-content: center;
                 }
+                
+                /* Mobile: center the image vertically with equal spacing */
+                @media (max-width: 767px) and (orientation: portrait) {
+                    .stage {
+                        align-items: center;
+                        padding: clamp(16px, 3vh, 24px) 0;
+                    }
+                }
 
                 /* largest box that fits in the remaining space - now much wider */
                 .frame {
@@ -247,7 +255,7 @@ export function HeroSection() {
                     .mobile-cta {
                         display: flex;
                         justify-content: center;
-                        padding: clamp(16px, 3vh, 24px) clamp(14px, 4vw, 48px) clamp(20px, 4vh, 32px);
+                        padding: clamp(16px, 3vh, 24px) clamp(14px, 4vw, 48px) clamp(24px, 4vh, 36px);
                         width: 100%;
                     }
                     
