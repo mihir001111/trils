@@ -648,22 +648,22 @@ h3 em {
 /* Desktop (≥1025px): show first image */
 @media (min-width: 1025px) {
   .desktop-team-image {
-    display: block;
+    display: block !important;
   }
 
   .mobile-team-image {
-    display: none;
+    display: none !important;
   }
 }
 
 /* Mobile portrait: show second image */
 @media (max-width: 767px) and (orientation: portrait) {
   .desktop-team-image {
-    display: none;
+    display: none !important;
   }
 
   .mobile-team-image {
-    display: block;
+    display: block !important;
   }
 
   .next-feature-image {
@@ -674,11 +674,11 @@ h3 em {
 /* Mobile landscape: show first image */
 @media (max-width: 767px) and (orientation: landscape) {
   .desktop-team-image {
-    display: block;
+    display: block !important;
   }
 
   .mobile-team-image {
-    display: none;
+    display: none !important;
   }
 
   .next-feature-image {
@@ -689,11 +689,11 @@ h3 em {
 /* iPad portrait: show second image */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .desktop-team-image {
-    display: none;
+    display: none !important;
   }
 
   .mobile-team-image {
-    display: block;
+    display: block !important;
   }
 
   .next-feature-image {
@@ -704,11 +704,11 @@ h3 em {
 /* iPad landscape: show first image */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .desktop-team-image {
-    display: block;
+    display: block !important;
   }
 
   .mobile-team-image {
-    display: none;
+    display: none !important;
   }
 
   .next-feature-image {
