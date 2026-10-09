@@ -636,7 +636,7 @@ h3 em {
   display: block;
 }
 
-/* Show desktop image by default (desktop + landscape) */
+/* Responsive team images - only show one at a time */
 .desktop-team-image {
   display: block;
 }
@@ -645,7 +645,18 @@ h3 em {
   display: none;
 }
 
-/* Mobile portrait: show mobile image */
+/* Desktop (≥1025px): show first image */
+@media (min-width: 1025px) {
+  .desktop-team-image {
+    display: block;
+  }
+
+  .mobile-team-image {
+    display: none;
+  }
+}
+
+/* Mobile portrait: show second image */
 @media (max-width: 767px) and (orientation: portrait) {
   .desktop-team-image {
     display: none;
@@ -660,8 +671,38 @@ h3 em {
   }
 }
 
-/* Mobile/iPad landscape: show desktop image */
-@media (max-width: 1024px) and (orientation: landscape) {
+/* Mobile landscape: show first image */
+@media (max-width: 767px) and (orientation: landscape) {
+  .desktop-team-image {
+    display: block;
+  }
+
+  .mobile-team-image {
+    display: none;
+  }
+
+  .next-feature-image {
+    max-width: 700px;
+  }
+}
+
+/* iPad portrait: show second image */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .desktop-team-image {
+    display: none;
+  }
+
+  .mobile-team-image {
+    display: block;
+  }
+
+  .next-feature-image {
+    max-width: 600px;
+  }
+}
+
+/* iPad landscape: show first image */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .desktop-team-image {
     display: block;
   }
