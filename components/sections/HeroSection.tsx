@@ -184,11 +184,11 @@ export function HeroSection() {
                     justify-content: center;
                 }
                 
-                /* Mobile: center the image vertically with equal spacing */
+                /* Mobile: align image to bottom */
                 @media (max-width: 767px) and (orientation: portrait) {
                     .stage {
-                        align-items: center;
-                        padding: clamp(16px, 3vh, 24px) 0;
+                        align-items: flex-end;
+                        padding: 0;
                     }
                 }
 
@@ -223,7 +223,7 @@ export function HeroSection() {
                 /* Mobile portrait: use app screenshot */
                 @media (max-width: 767px) and (orientation: portrait) {
                     .portrait {
-                        content: url('https://res.cloudinary.com/dn1hjjczy/image/upload/c_crop,g_north_west,h_1395,w_666,x_136,y_133/After_Trials_Smartphone_Mockup_bc9yo4.png');
+                        content: url('https://res.cloudinary.com/dn1hjjczy/image/upload/v1777456137/177shots_so_ohlge1.png');
                     }
                     
                     .subtitle {
