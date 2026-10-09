@@ -177,10 +177,14 @@ export function HeroSection() {
                     }
                 }
                 
-                /* Mobile portrait: use team illustration */
+                /* Mobile portrait: use app screenshot */
                 @media (max-width: 767px) and (orientation: portrait) {
                     .portrait {
-                        content: url('https://res.cloudinary.com/dn1hjjczy/image/upload/v1789066941/copy_of_chatgpt_imagek_sep_10_2026_11_12_13_pm_yiv0ho.png');
+                        content: url('https://res.cloudinary.com/dn1hjjczy/image/upload/v1777455394/628shots_so_mtagyl.png');
+                    }
+                    
+                    .subtitle {
+                        display: none;
                     }
                 }
                 
