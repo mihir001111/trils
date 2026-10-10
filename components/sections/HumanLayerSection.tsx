@@ -39,7 +39,9 @@ export function HumanLayerSection() {
                 .human-layer-image {
                     width: 100%;
                     max-width: 600px;
+                    max-height: 85vh;
                     height: auto;
+                    object-fit: contain;
                     border-radius: 8px;
                 }
 
@@ -47,6 +49,7 @@ export function HumanLayerSection() {
                 @media (min-width: 641px) and (max-width: 1024px) {
                     .human-layer-image {
                         max-width: 500px;
+                        max-height: 80vh;
                     }
                 }
 
@@ -58,6 +61,7 @@ export function HumanLayerSection() {
                     
                     .human-layer-image {
                         max-width: 100%;
+                        max-height: 70vh;
                     }
                 }
 
@@ -69,6 +73,7 @@ export function HumanLayerSection() {
                     
                     .human-layer-image {
                         max-width: 450px;
+                        max-height: 75vh;
                     }
                 }
 
@@ -76,6 +81,7 @@ export function HumanLayerSection() {
                 @media (min-width: 1440px) {
                     .human-layer-image {
                         max-width: 650px;
+                        max-height: 85vh;
                     }
                 }
             `}</style>
