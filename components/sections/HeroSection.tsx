@@ -80,7 +80,7 @@ export function HeroSection() {
                     text-align: center;
                     width: 100%;
                     max-width: 720px;
-                    padding-top: clamp(20px, 4vh, 50px);
+                    padding-top: clamp(32px, 6vh, 64px);
                     position: relative;
                     z-index: 5;
                 }
@@ -88,14 +88,14 @@ export function HeroSection() {
                 /* Mobile: reduce top padding even more */
                 @media (max-width: 767px) and (orientation: portrait) {
                     .copy {
-                        padding-top: clamp(8px, 1.5vh, 16px);
+                        padding-top: clamp(20px, 4vh, 32px);
                     }
                 }
 
                 .title {
                     margin: 0;
                     font-family: var(--font-serif), 'Cormorant Garamond', Georgia, serif;
-                    font-size: clamp(2.8rem, 5.5vw, 4.5rem);
+                    font-size: clamp(3.2rem, 6vw, 5rem);
                     font-weight: 300;
                     font-style: normal;
                     line-height: 1.08;
@@ -107,10 +107,10 @@ export function HeroSection() {
                     -webkit-text-fill-color: currentColor;
                 }
                 
-                /* Mobile: smaller title */
+                /* Mobile: larger title */
                 @media (max-width: 767px) and (orientation: portrait) {
                     .title {
-                        font-size: clamp(2.2rem, 8vw, 2.8rem);
+                        font-size: clamp(2.6rem, 9vw, 3.4rem);
                     }
                 }
                 
