@@ -274,8 +274,7 @@ export function HeroSection() {
 
             {/* Logo */}
             <a href="#hero" className="logo" aria-label="After Trials">
-                <img src="/mobile.svg" alt="After Trials" style={{ width: '3.75em', height: '3.75em' }} />
-                <span>After Trials</span>
+                <img src="https://res.cloudinary.com/dn1hjjczy/image/upload/c_crop,g_north_west,h_50,w_305,x_101,y_243/bitmap_r04fi5.png" alt="After Trials" style={{ height: 'clamp(32px, 5vh, 48px)', width: 'auto' }} />
             </a>
 
             {/* Text */}
