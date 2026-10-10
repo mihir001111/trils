@@ -18,7 +18,7 @@ export function AppMockupSection() {
 
                 <div className="mockup-container">
                     <img
-                        src="https://res.cloudinary.com/dn1hjjczy/image/upload/v1777456137/177shots_so_ohlge1.png"
+                        src="https://res.cloudinary.com/dn1hjjczy/image/upload/v1790758618/37D15B1B-5A4E-4BF1-A86C-4AD04C5FA588_svhu8x.png"
                         alt="After Trials mobile application mockup showing the professional medical network interface"
                         loading="lazy"
                         className="mockup-image"
@@ -54,7 +54,7 @@ export function AppMockupSection() {
                 }
 
                 .mockup-container {
-                    max-width: 800px;
+                    max-width: 900px;
                     margin: 0 auto;
                     padding: 0 1rem;
                     display: flex;
@@ -74,10 +74,46 @@ export function AppMockupSection() {
                     transform: scale(1.01);
                 }
                 
-                /* Larger on mobile */
-                @media (max-width: 767px) {
+                /* Large desktop */
+                @media (min-width: 1441px) {
+                    .mockup-container {
+                        max-width: 1000px;
+                    }
+                }
+                
+                /* Desktop */
+                @media (min-width: 1025px) and (max-width: 1440px) {
+                    .mockup-container {
+                        max-width: 850px;
+                    }
+                }
+                
+                /* Tablet landscape */
+                @media (min-width: 769px) and (max-width: 1024px) {
+                    .mockup-container {
+                        max-width: 700px;
+                    }
+                }
+                
+                /* Tablet portrait */
+                @media (min-width: 641px) and (max-width: 768px) {
+                    .mockup-container {
+                        max-width: 600px;
+                    }
+                }
+                
+                /* Mobile landscape */
+                @media (max-width: 896px) and (orientation: landscape) {
+                    .mockup-container {
+                        max-width: 550px;
+                    }
+                }
+                
+                /* Mobile portrait */
+                @media (max-width: 640px) and (orientation: portrait) {
                     .mockup-container {
                         max-width: 100%;
+                        padding: 0 0.5rem;
                     }
                 }
             `}</style>
